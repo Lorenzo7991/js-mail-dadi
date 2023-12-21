@@ -41,6 +41,6 @@
     - stampa "Benvenuto"
 
     **ALTRIMENTI:**
-    - stampa **"ENTRAH? NON ENTRAH! ENTRAH? NON PUO' ENTRAREH!!"**
+    - stampa **Mi dispiace, la tua email non risulta tra quelle registrate**
 
         
