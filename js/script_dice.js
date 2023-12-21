@@ -21,7 +21,7 @@ if(playerOne > playerTwo){
     result = "E' un pareggio! lancia di nuovo."
 }
 
-/* Printing result variable */
+/* variable result cheking */
 console.log(result);
 
 /* Recovering DOM elements and assigning JS variables values */
