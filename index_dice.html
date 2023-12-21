@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- * Bootstrap library stylesheets -->
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+        <!-- * Bootstrap library stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- * Local stylesheet -->
     <link rel="stylesheet" href="css/style_dice.css">
@@ -16,9 +15,22 @@
 </head>
 
 <body>
-    <section id="dice">
-        
+    <h1 class="text-center mt-5 fw-bold">GOOD LUCK!</h1>
+    <section id="board" class="container bg-success mt-3">
+       <div class="top-board d-flex justify-content-evenly align-items-center my-4">
+        <span class="player-one text-white fs-4 fw-bolder">Lancio giocatore 1:</span>
+        <span class="player-two text-white fs-4 fw-bolder">Lancio giocatore 2:</span>
+    </div>
+    <div class="mid-board d-flex justify-content-evenly align-items-center">
+        <span class="throw-player-one text-white fs-2 fw-bolder"></span>
+        <span class="throw-player-two text-white fs-2 fw-bolder"></span>
+    </div>
+    <div class="bottom-board">
+        <h4 class="result-message text-center text-white fw-bolder mt-5"></h4>
+    </div>
+
     </section>
+        
 
     
 </body>

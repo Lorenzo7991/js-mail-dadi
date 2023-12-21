@@ -1,16 +1,18 @@
 /* DOM - JS sheet test response */
 console.log('JS OK');
 
-/* Initialize dice throw variables and assign randomize value */
+
+
+/* Initializing dice throw variables and assigning randomize value */
 const playerOne = Math.floor(Math.random() * 6) + 1;
 const playerTwo = Math.floor(Math.random() * 6) + 1;
 /* variables value checking */
 console.log(`Giocatore 1: (${playerOne})   Giocatore 2: (${playerTwo})`); 
 
-/* Initialize result support variable */
+/* Initializing result support variable */
 let result = '';
 
-/* Establish winner */
+/* Establishing winner */
 if(playerOne > playerTwo){
     result = "Ha vinto il giocatore 1!"
 } else if (playerOne < playerTwo){
@@ -21,3 +23,10 @@ if(playerOne > playerTwo){
 
 /* Printing result variable */
 console.log(result);
+
+/* Recovering DOM elements and assigning JS variables values */
+document.querySelector('.throw-player-one').textContent = playerOne;
+document.querySelector('.throw-player-two').textContent = playerTwo;
+document.querySelector('.result-message').textContent = result;
+
+//TODO: add btn event listener for user interaction
