@@ -2,7 +2,7 @@
 ### Console first:
 1. **Inizializzare due variabili per contenere il risultato del lancio dei dadi.**
 
-1. **Assegnare alle due variabili il rispettivo valore del lancio dei giocatori** (Assegnare direttamente la funzione "randomize" alle variabili? (TODO: controllare se è possibile farlo)).
+1. **Assegnare alle due variabili il rispettivo valore del lancio dei giocatori**
 
 1. **Stampare il risultato del lancio dei due giocatori.**
 
