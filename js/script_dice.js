@@ -25,8 +25,8 @@ if(playerOne > playerTwo){
 console.log(result);
 
 /* Recovering DOM elements and assigning JS variables values */
-document.querySelector('.throw-player-one').textContent = playerOne;
-document.querySelector('.throw-player-two').textContent = playerTwo;
-document.querySelector('.result-message').textContent = result;
+document.querySelector('.throw-player-one').innerText = playerOne;
+document.querySelector('.throw-player-two').innerText = playerTwo;
+document.querySelector('.result-message').innerText = result;
 
 //TODO: add btn event listener for user interaction
