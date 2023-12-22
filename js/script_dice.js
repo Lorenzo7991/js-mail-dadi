@@ -29,4 +29,3 @@ document.querySelector('.throw-player-one').innerText = playerOne;
 document.querySelector('.throw-player-two').innerText = playerTwo;
 document.querySelector('.result-message').innerText = result;
 
-//TODO: add btn event listener for user interaction
