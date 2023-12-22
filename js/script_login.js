@@ -5,12 +5,21 @@ document.getElementById('btn-verify').addEventListener('click', function () {
     /* Assigning email DOM element as value of the emailElement variable */
     const emailElement = document.getElementById('email');
 
-   
+
     /* Recovery value of emailElement variable and assigning as value of userEmail variable */
-    const userEmail = emailElement.value;
+    const userEmail = emailElement.value.trim();
     /* Variable userEmail value check */
     console.log("Valore attuale di userEmail:" + " " + userEmail);
-    
+
+    /* Verify email field if empty */
+    if (userEmail.trim() === '') {
+        /* Initializing resultMessage variable and assigning DOM class as value */
+        const resultMessage = document.querySelector('.result-message');
+        resultMessage.innerText = "Mi dispiace, devi inserire un'email per far si che venga verificata";
+        /* Exit function if email field is empty */
+        return; 
+    }
+
     /* Initializing and assigning array variable as registered emails */
     const emailList = ["fake_email1@emailfake.it", "fake_email2@emailfake.it", "fake_email3@emailfake.it", "fake_email4@emailfake.it", "fake_email5@emailfake.it", "lorenzo1997chierisini@gmail.com"];
     /*Variable array value check */
@@ -27,7 +36,7 @@ document.getElementById('btn-verify').addEventListener('click', function () {
     }
 
 
-     /* Initializing resultMessage variable and assigning DOM class as value  */
+    /* Initializing resultMessage variable and assigning DOM class as value  */
     const resultMessage = document.querySelector('.result-message');
     /* Verrifying emailFound value and assigning matching value of resultMessage variable  */
     if (emailFound) {
